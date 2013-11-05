@@ -118,7 +118,7 @@ class PortScanner
 
 	public static String longIpToString(long ip)
 	{
-		return ((ip >> 24) & 255) + "." + ((ip >> 16) & 255) + "." + ((ip >> 8) & 255) + "." + (ip & 255);
+		return (ip >> 24) + "." + ((ip >> 16) & 255) + "." + ((ip >> 8) & 255) + "." + (ip & 255);
 	}
 
 	public static void main(String[] args) throws Exception
